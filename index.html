@@ -1,28 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Advice generator app</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap"
+            rel="stylesheet"
+        />
 
-  Advice #<!-- Advice ID goes here -->
+        <link rel="stylesheet" href="./src/css/main.css" />
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <title>
+            Frontend Mentor | Advice generator app
+        </title>
+
+        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+        <style>
+            .attribution {
+                font-size: 22px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                color: white;
+
+                // .____.
+            }
+            .attribution a {
+                color: hsl(228, 45%, 44%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="advice__container">
+            <p class="advice__number">
+                ADVICE <span id="adviceId">#117</span>
+            </p>
+            <p class="advice__quote">
+                <q id="insertAdvice">
+                    Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Voluptate, unde.
+                </q>
+            </p>
+            <div class="divider__container">
+                <img
+                    class="divider__img"
+                    src="./images/pattern-divider-desktop.svg"
+                    alt="pattern-divider-desktop"
+                />
+            </div>
+
+            <button
+                class="dice__img-container"
+                id="adviceBtn"
+            >
+                <div class="dice__img">
+                    <img
+                        src="./images/icon-dice.svg"
+                        alt="dice img"
+                    />
+                </div>
+            </button>
+        </div>
+
+        <div class="attribution">
+            <div>
+                Challenge by
+                <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+                >
+            </div>
+            <div>
+                Coded by <a href="#">Your Name Here</a>
+            </div>
+        </div>
+
+        <script src="./src/js/main.js"></script>
+    </body>
 </html>
+
